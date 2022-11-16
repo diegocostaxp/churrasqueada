@@ -12,7 +12,7 @@ const classeList = [
       'https://media-cdn.tripadvisor.com/media/photo-w/1a/8e/2a/59/capitao-charles-vane.jpg',
     title: 'Hamburger MixBacon',
     description:
-      'Picanha, queijo Gorgonzola de origem Argentina, bacon, alface, tomate e cebola Caramelizada.',
+      'Picanha, queijo gorgonzola, bacon, alface, tomate e cebola caramelizada.',
     url: 'https://www.youtube.com/watch?v=3Lmu6VV2eLM',
     preco: 'R$ 40,00',
     links: [
@@ -29,7 +29,7 @@ const classeList = [
       'https://media-cdn.tripadvisor.com/media/photo-w/1a/8e/32/f9/capitao-dos-7-mares-e.jpg',
     title: 'Hamburger MixCheddar',
     description:
-      'Pão de Parmesão, hambúrguer bovino e secreto, picles, tomate, bacon e cheddar à gosto.',
+      'Pão de parmesão, hambúrguer bovino, picles, tomate, bacon e cheddar.',
     url: 'https://www.youtube.com/watch?v=zwY3sSbr8os',
     preco: 'R$ 50,00',
     links: [
@@ -46,7 +46,7 @@ const classeList = [
       'https://media-cdn.tripadvisor.com/media/photo-w/1a/8e/32/ae/sanduiche-de-costela.jpg',
     title: 'Hamburger MixCostela',
     description:
-      'Costela desfiada, queijo mussarela,  molhos apimentados e tomate dentro do pão de Parmesão.',
+      'Costela desfiada, queijo mussarela, molhos apimentados, tomate e alecrim.',
     url: 'https://www.youtube.com/watch?v=wcfFkcmmjrI',
     preco: 'R$ 60,00',
     links: [
@@ -90,7 +90,7 @@ function Main() {
               classeId={classe.id}
               cover={classe.cover}
               title={classe.title}
-              preco={classe.preco} /* editei */
+              preco={classe.preco}
               openModal={openModal}
             />
           ))}
@@ -101,7 +101,7 @@ function Main() {
         videoUrl={currentClasse.url}
         nameClass={currentClasse.title}
         description={currentClasse.description}
-        preco={currentClasse.preco} /* editei */
+        preco={currentClasse.preco}
         modalIsOpen={modalIsOpen}
         closeModal={closeModal}
         links={currentClasse.links}
